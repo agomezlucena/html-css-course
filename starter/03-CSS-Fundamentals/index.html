@@ -3,20 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>The Basic Language of the Web: HTML</title>
+    <link rel="stylesheet" href="style.css"/>
   </head>
 
   <body>
-    <!--
-    <h1>The Basic Language of the Web: HTML</h1>
-    <h2>The Basic Language of the Web: HTML</h2>
-    <h3>The Basic Language of the Web: HTML</h3>
-    <h4>The Basic Language of the Web: HTML</h4>
-    <h5>The Basic Language of the Web: HTML</h5>
-    <h6>The Basic Language of the Web: HTML</h6>
-    -->
-
-    <header>
-      <h1>📘 The Code Magazine</h1>
+    <header class="main-header">
+      <h1>📘 the code magazine</h1>
 
       <nav>
         <a href="blog.html">Blog</a>
@@ -27,7 +19,7 @@
     </header>
 
     <article>
-      <header>
+      <header class="post-header">
         <h2>The Basic Language of the Web: HTML</h2>
 
         <img
@@ -37,7 +29,7 @@
           width="50"
         />
 
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
 
         <img
           src="img/post-img.jpg"
@@ -95,7 +87,7 @@
         web. Here are 5 of them:
       </p>
 
-      <ul>
+      <ul class="reasons">
         <li>To be able to use the fundamental web dev language</li>
         <li>
           To hand-craft beautiful websites instead of relying on tools like
@@ -109,11 +101,11 @@
       <p>Hopefully you learned something new here. See you next time!</p>
     </article>
 
-    <aside>
+    <aside class="sidebar">
       <h4>Related posts</h4>
 
-      <ul>
-        <li>
+      <ul class="related-posts">
+        <li class="related-post">
           <img
             src="img/related-1.jpg"
             alt="Person programming"
@@ -121,14 +113,14 @@
             width="75"
           />
           <a href="#">How to Learn Web Development</a>
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
         </li>
-        <li>
+        <li class="related-post">
           <img src="img/related-2.jpg" alt="Lightning" width="75" heigth="75" />
           <a href="#">The Unknown Powers of CSS</a>
-          <p>By Jim Dillon</p>
+          <p class="related-author">By Jim Dillon</p>
         </li>
-        <li>
+        <li class="related-post">
           <img
             src="img/related-3.jpg"
             alt="JavaScript code on a screen"
@@ -136,11 +128,11 @@
             height="75"
           />
           <a href="#">Why JavaScript is Awesome</a>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
 
-    <footer>Copyright &copy; 2027 by The Code Magazine.</footer>
+    <footer><p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p></footer>
   </body>
 </html>
